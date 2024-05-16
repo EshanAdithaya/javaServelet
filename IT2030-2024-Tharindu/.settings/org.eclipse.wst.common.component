@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="IT2030-2024-Tharindu">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/" source-path="/build/classes/serverlet"/>
+                
+        <property name="context-root" value="IT2030-2024-Tharindu"/>
+                
+        <property name="java-output-path" value="/IT2030-2024-Tharindu/build/classes"/>
+            
+    </wb-module>
+    
+</project-modules>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<script>
+// Function to display error message if authentication fails
+function displayErrorMessage() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var error = urlParams.get('error');
+    if (error === 'authentication_failed') {
+        document.getElementById('error-message').innerText = 'Wrong username or password. Please try again.';
+    }
+}
+</script>
+</head>
+<body onload="displayErrorMessage()">
+    <h2>Login</h2>
+    
+    <!-- Display error message container -->
+    <p id="error-message" style="color: red;"></p>
+    
+    <!-- Form to submit username and password to the LoginServlet -->
+    <form action="login" method="post"> 
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+            </form>
+            
+            <button onclick="window.location.href='signup.html'">Signup</button>
+</body>
+</html>
